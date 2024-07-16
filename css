@@ -1,0 +1,1933 @@
+/*  \/  \/  SETUP  \/  \/  */
+#dante * 
+{
+ box-sizing: border-box;
+ font-family: "roboto", "segoe ui";
+ font-size: 14px;
+}
+
+#dante .db  { display: block; }
+#dante .dib { display: inline-block; }
+
+#dante .pr { position: relative; }
+#dante .pa { position: absolute; }
+
+/*  /\  /\  SETUP  /\  /\  */
+
+/*  \/  \/  FLEX BOX  \/  \/  */
+#dante .flex { display: flex; }
+
+#dante .flex-row { flex-direction: row; }
+#dante .flex-wrap-row { display: flex; flex-direction: row; flex-wrap: wrap; }
+#dante .flex-nowrap-row { display: flex; flex-direction: row; flex-wrap: nowrap; }
+#dante .flex-wrap-reverse-row { display: flex; flex-direction: row; flex-wrap: wrap-reverse; }
+
+#dante .flex-column { flex-direction: column; }
+#dante .flex-wrap-column { display: flex; flex-direction: column; flex-wrap: wrap; }
+#dante .flex-nowrap-column { display: flex; flex-direction: column; flex-wrap: nowrap; }
+#dante .flex-wrap-reverse-column { display: flex; flex-direction: column; flex-wrap: wrap-reverse; }
+
+#dante .flex-wrap { flex-wrap: wrap; }
+#dante .flex-nowrap { flex-wrap: nowrap; }
+#dante .flex-wrap-reverse { flex-wrap: wrap-reverse; }
+
+#dante .flex-expand-shrink { flex-grow: 1; flex-shrink: 1; }
+#dante .flex-inline { display: inline-flex; align-items: center; }
+
+#dante .flex-start { justify-content: flex-start; }
+#dante .flex-end { justify-content: flex-end; }
+#dante .flex-space-between { justify-content: space-between; }
+#dante .flex-space-around { justify-content: space-around; }
+
+#dante .flex-vc { align-items: center; }
+#dante .flex-hc { justify-content: center; }
+#dante .flex-centre { align-items: center; justify-content: center; }
+#dante .flex-centre-end { align-items: center; justify-content: flex-end; }
+
+#dante .flex-acs { align-content: start; }
+#dante .flex-ass { align-self: start; }
+#dante .flex-ase { align-self: flex-end; }
+
+#dante .d-col-1  { width: 4.166666666666667%; }
+#dante .d-col-2  { width: 8.3333333333333333333333333333333%; }
+#dante .d-col-3  { width: 12.5%; }
+#dante .d-col-4  { width: 16.666666666666666666666666666667%; }
+#dante .d-col-5  { width: 20.833333333333333333333333333333%; }
+#dante .d-col-6  { width: 25%; }
+#dante .d-col-7  { width: 29.166666666666666666666666666667%; }
+#dante .d-col-8  { width: 33.333333333333333333333333333333%; }
+#dante .d-col-9  { width: 37.5%; }
+#dante .d-col-10 { width: 41.666666666666666666666666666667%; }     
+#dante .d-col-11 { width: 45.833333333333333333333333333333%; }
+#dante .d-col-12 { width: 50%; }
+#dante .d-col-13 { width: 54.166666666666666666666666666667%; }
+#dante .d-col-14 { width: 58.333333333333333333333333333333%; }
+#dante .d-col-15 { width: 62.5%; }
+#dante .d-col-16 { width: 66.666666666666666666666666666667%; }
+#dante .d-col-18 { width: 75%; }
+#dante .d-col-19 { width: 79.166666666666666666666666666667%; }
+#dante .d-col-20 { width: 83.333333333333333333333333333333%; }
+#dante .d-col-21 { width: 87.5%; }
+#dante .d-col-22 { width: 91.666666666666666666666666666667%; } 
+#dante .d-col-23 { width: 95.833333333333333333333333333333%; }
+#dante .d-col-24 { width: 100%; }
+
+ @media (max-width: 575px)
+ {
+  #dante .d-col-xs-1, #dante .d-col-xs-2, #dante .d-col-xs-3, #dante .d-col-xs-4, #dante .d-col-xs-5, #dante .d-col-xs-6, #dante .d-col-xs-7, #dante .d-col-xs-8, #dante .d-col-xs-9, #dante .d-col-xs-9, #dante .d-col-xs-10, #dante .d-col-xs-11,
+  #dante .d-col-xs-12, #dante .d-col-xs-13, #dante .d-col-xs-14, #dante .d-col-xs-15, #dante .d-col-xs-16, #dante .d-col-xs-17, #dante .d-col-xs-18, #dante .d-col-xs-19, #dante .d-col-xs-20, #dante .d-col-xs-21, #dante .d-col-xs-22, #dante .d-col-xs-23, #dante .d-col-xs-24
+  {
+   float: left;
+   width: 100%;    
+  }
+
+  #dante .d-col-xs { flex-grow: 1; flex-basis: 100%; max-width: 100%; }
+  #dante .d-col-xs-1 { flex-grow: 0; flex-shrink: 0; max-width: 4.1666666666666666666666666666667%; }     
+  #dante .d-col-xs-2 { flex-grow: 0; flex-shrink: 0; max-width: 8.3333333333333333333333333333333%; }  
+  #dante .d-col-xs-3 { flex-grow: 0; flex-shrink: 0; max-width: 12.5%; }     
+  #dante .d-col-xs-4 { flex-grow: 0; flex-shrink: 0; max-width: 16.666666666666666666666666666667%; }   
+  #dante .d-col-xs-5 { flex-grow: 0; flex-shrink: 0; max-width: 20.833333333333333333333333333333%; }    
+  #dante .d-col-xs-6 { flex-grow: 0; flex-shrink: 0; max-width: 25%; }    
+  #dante .d-col-xs-7 { flex-grow: 0; flex-shrink: 0; max-width: 29.166666666666666666666666666667%; }    
+  #dante .d-col-xs-8 { flex-grow: 0; flex-shrink: 0; max-width: 33.333333333333333333333333333333%; }       
+  #dante .d-col-xs-9 { flex-grow: 0; flex-shrink: 0; max-width: 37.5%; }    
+  #dante .d-col-xs-10 { flex-grow: 0; flex-shrink: 0; max-width: 41.666666666666666666666666666667%; }    
+  #dante .d-col-xs-11 { flex-grow: 0; flex-shrink: 0; max-width: 45.833333333333333333333333333333%; }   
+  #dante .d-col-xs-12 { flex-grow: 0; flex-shrink: 0; max-width: 50%; }  
+  #dante .d-col-xs-13 { flex-grow: 0; flex-shrink: 0; max-width: 54.166666666666666666666666666667%; }    
+  #dante .d-col-xs-14 { flex-grow: 0; flex-shrink: 0; max-width: 58.333333333333333333333333333333%; }   
+  #dante .d-col-xs-15 { flex-grow: 0; flex-shrink: 0; max-width: 62.5%; }     
+  #dante .d-col-xs-16 { flex-grow: 0; flex-shrink: 0; max-width: 66.666666666666666666666666666667%; }  
+  #dante .d-col-xs-17 { flex-grow: 0; flex-shrink: 0; max-width: 70.833333333333333333333333333333%; }     
+  #dante .d-col-xs-18 { flex-grow: 0; flex-shrink: 0; max-width: 75%; }     
+  #dante .d-col-xs-19 { flex-grow: 0; flex-shrink: 0; max-width: 79.166666666666666666666666666667%; }     
+  #dante .d-col-xs-20 { flex-grow: 0; flex-shrink: 0; max-width: 83.333333333333333333333333333333%; }     
+  #dante .d-col-xs-21 { flex-grow: 0; flex-shrink: 0; max-width: 87.5%; }       
+  #dante .d-col-xs-22 { flex-grow: 0; flex-shrink: 0; max-width: 91.666666666666666666666666666667%; }     
+  #dante .d-col-xs-23 { flex-grow: 0; flex-shrink: 0; max-width: 95.833333333333333333333333333333%; }     
+  #dante .d-col-xs-24 { flex-grow: 0; flex-shrink: 0; max-width: 100%; }
+ }
+
+ @media (min-width: 576px) and (max-width: 767px)
+ {
+  #dante .d-col-sm-1, #dante .d-col-sm-2, #dante .d-col-sm-3, #dante .d-col-sm-4, #dante .d-col-sm-5, #dante .d-col-sm-6, #dante .d-col-sm-7, #dante .d-col-sm-8, #dante .d-col-sm-9, #dante .d-col-sm-9, #dante .d-col-sm-10, #dante .d-col-sm-11, #dante .d-col-sm-12, 
+  #dante .d-col-sm-13, #dante .d-col-sm-14, #dante .d-col-sm-15, #dante .d-col-sm-16, #dante .d-col-sm-17, #dante .d-col-sm-18, #dante .d-col-sm-19, #dante .d-col-sm-20, #dante .d-col-sm-21, #dante .d-col-sm-22, #dante .d-col-sm-23, #dante .d-col-sm-24
+  {
+   float: left; 
+   width: 100%;   
+  }    
+
+  #dante .d-col-sm { flex-grow: 1; flex-basis: 100%; max-width: 100%; }
+  #dante .d-col-sm-1 { flex-grow: 0; flex-shrink: 0; max-width: 4.1666666666666666666666666666667%; }     
+  #dante .d-col-sm-2 { flex-grow: 0; flex-shrink: 0; max-width: 8.3333333333333333333333333333333%; }     
+  #dante .d-col-sm-3 { flex-grow: 0; flex-shrink: 0; max-width: 12.5%; }      
+  #dante .d-col-sm-4 { flex-grow: 0; flex-shrink: 0; max-width: 16.666666666666666666666666666667%; }     
+  #dante .d-col-sm-5 { flex-grow: 0; flex-shrink: 0; max-width: 20.833333333333333333333333333333%; }     
+  #dante .d-col-sm-6 { flex-grow: 0; flex-shrink: 0; max-width: 25%; }     
+  #dante .d-col-sm-7 { flex-grow: 0; flex-shrink: 0; max-width: 29.166666666666666666666666666667%; }     
+  #dante .d-col-sm-8 { flex-grow: 0; flex-shrink: 0; max-width: 33.333333333333333333333333333333%; }       
+  #dante .d-col-sm-9 { flex-grow: 0; flex-shrink: 0; max-width: 37.5%; }     
+  #dante .d-col-sm-10 { flex-grow: 0; flex-shrink: 0; max-width: 41.666666666666666666666666666667%; }     
+  #dante .d-col-sm-11 { flex-grow: 0; flex-shrink: 0; max-width: 45.833333333333333333333333333333%; }     
+  #dante .d-col-sm-12 { flex-grow: 0; flex-shrink: 0; max-width: 50%; }  
+  #dante .d-col-sm-13 { flex-grow: 0; flex-shrink: 0; max-width: 54.166666666666666666666666666667%; }   
+  #dante .d-col-sm-14 { flex-grow: 0; flex-shrink: 0; max-width: 58.333333333333333333333333333333%; }  
+  #dante .d-col-sm-15 { flex-grow: 0; flex-shrink: 0; max-width: 62.5%; }  
+  #dante .d-col-sm-16 { flex-grow: 0; flex-shrink: 0; max-width: 66.666666666666666666666666666667%; }     
+  #dante .d-col-sm-17 { flex-grow: 0; flex-shrink: 0; max-width: 70.833333333333333333333333333333%; }     
+  #dante .d-col-sm-18 { flex-grow: 0; flex-shrink: 0; max-width: 75%; }  
+  #dante .d-col-sm-19 { flex-grow: 0; flex-shrink: 0; max-width: 79.166666666666666666666666666667%; }  
+  #dante .d-col-sm-20 { flex-grow: 0; flex-shrink: 0; max-width: 83.333333333333333333333333333333%; }  
+  #dante .d-col-sm-21 { flex-grow: 0; flex-shrink: 0; max-width: 87.5%; }     
+  #dante .d-col-sm-22 { flex-grow: 0; flex-shrink: 0; max-width: 91.666666666666666666666666666667%; }      
+  #dante .d-col-sm-23 { flex-grow: 0; flex-shrink: 0; max-width: 95.833333333333333333333333333333%; }     
+  #dante .d-col-sm-24 { flex-grow: 0; flex-shrink: 0; max-width: 100%; }     
+ }
+    
+ @media (min-width: 768px) and (max-width: 991px)
+ {
+  #dante .d-col-md-1, #dante .d-col-md-2, #dante .d-col-md-3, #dante .d-col-md-4, #dante .d-col-md-5, #dante .d-col-md-6, #dante .d-col-md-7, #dante .d-col-md-8, #dante .d-col-md-9, #dante .d-col-md-9, #dante .d-col-md-10, #dante .d-col-md-11, #dante .d-col-md-12, 
+  #dante .d-col-md-13, #dante .d-col-md-14, #dante .d-col-md-15, #dante .d-col-md-16, #dante .d-col-md-17, #dante .d-col-md-18, #dante .d-col-md-19, #dante .d-col-md-20, #dante .d-col-md-21, #dante .d-col-md-22, #dante .d-col-md-23, #dante .d-col-md-24
+  {
+   float: left;
+   width: 100%;    
+  }
+
+  #dante .d-col-md { flex-grow: 1; flex-basis: 100%; max-width: 100%; }
+  #dante .d-col-md-1 { flex-grow: 0; flex-shrink: 0; max-width: 4.1666666666666666666666666666667%; }     
+  #dante .d-col-md-2 { flex-grow: 0; flex-shrink: 0; max-width: 8.3333333333333333333333333333333%; }     
+  #dante .d-col-md-3 { flex-grow: 0; flex-shrink: 0; max-width: 12.5%; }      
+  #dante .d-col-md-4 { flex-grow: 0; flex-shrink: 0; max-width: 16.666666666666666666666666666667%; }   
+  #dante .d-col-md-5 { flex-grow: 0; flex-shrink: 0; max-width: 20.833333333333333333333333333333%; }     
+  #dante .d-col-md-6 { flex-grow: 0; flex-shrink: 0; max-width: 25%; }     
+  #dante .d-col-md-7 { flex-grow: 0; flex-shrink: 0; max-width: 29.166666666666666666666666666667%; }   
+  #dante .d-col-md-8 { flex-grow: 0; flex-shrink: 0; max-width: 33.333333333333333333333333333333%; }       
+  #dante .d-col-md-9 { flex-grow: 0; flex-shrink: 0; max-width: 37.5%; }   
+  #dante .d-col-md-10 { flex-grow: 0; flex-shrink: 0; max-width: 41.666666666666666666666666666667%; }     
+  #dante .d-col-md-11 { flex-grow: 0; flex-shrink: 0; max-width: 45.833333333333333333333333333333%; }    
+  #dante .d-col-md-12 { flex-grow: 0; flex-shrink: 0; max-width: 50%; }   
+  #dante .d-col-md-13 { flex-grow: 0; flex-shrink: 0; max-width: 54.166666666666666666666666666667%; }  
+  #dante .d-col-md-14 { flex-grow: 0; flex-shrink: 0; max-width: 58.333333333333333333333333333333%; }  
+  #dante .d-col-md-15 { flex-grow: 0; flex-shrink: 0; max-width: 62.5%; }     
+  #dante .d-col-md-16 { flex-grow: 0; flex-shrink: 0; max-width: 66.666666666666666666666666666667%; }     
+  #dante .d-col-md-17 { flex-grow: 0; flex-shrink: 0; max-width: 70.833333333333333333333333333333%; }     
+  #dante .d-col-md-18 { flex-grow: 0; flex-shrink: 0; max-width: 75%; }     
+  #dante .d-col-md-19 { flex-grow: 0; flex-shrink: 0; max-width: 79.166666666666666666666666666667%; }     
+  #dante .d-col-md-20 { flex-grow: 0; flex-shrink: 0; max-width: 83.333333333333333333333333333333%; }     
+  #dante .d-col-md-21 { flex-grow: 0; flex-shrink: 0; max-width: 87.5%; }       
+  #dante .d-col-md-22 { flex-grow: 0; flex-shrink: 0; max-width: 91.666666666666666666666666666667%; }       
+  #dante .d-col-md-23 { flex-grow: 0; flex-shrink: 0; max-width: 95.833333333333333333333333333333%; }     
+  #dante .d-col-md-24 { flex-grow: 0; flex-shrink: 0; max-width: 100%; }     
+ }
+
+ @media (min-width: 992px) and (max-width: 1199px)
+ {
+  #dante .d-col-lg-1, #dante .d-col-lg-2, #dante .d-col-lg-3, #dante .d-col-lg-4, #dante .d-col-lg-5, #dante .d-col-lg-6, #dante .d-col-lg-7, #dante .d-col-lg-8, #dante .d-col-lg-9, #dante .d-col-lg-9, #dante .d-col-lg-10, #dante .d-col-lg-11, #dante .d-col-lg-12,
+  #dante .d-col-lg-13, #dante .d-col-lg-14, #dante .d-col-lg-15, #dante .d-col-lg-16, #dante .d-col-lg-17, #dante .d-col-lg-18, #dante .d-col-lg-19, #dante .d-col-lg-20, #dante .d-col-lg-21, #dante .d-col-lg-22, #dante .d-col-lg-23, #dante .d-col-lg-24
+  {
+   float: left;
+   width: 100%;    
+  }   
+
+  #dante .d-col-lg { flex-grow: 1; flex-basis: 100%; max-width: 100%; }
+  #dante .d-col-lg-1 { flex-grow: 0; flex-shrink: 0; max-width: 4.1666666666666666666666666666667%; }     
+  #dante .d-col-lg-2 { flex-grow: 0; flex-shrink: 0; max-width: 8.3333333333333333333333333333333%; }     
+  #dante .d-col-lg-3 { flex-grow: 0; flex-shrink: 0; max-width: 12.5%; }      
+  #dante .d-col-lg-4 { flex-grow: 0; flex-shrink: 0; max-width: 16.666666666666666666666666666667%; }   
+  #dante .d-col-lg-5 { flex-grow: 0; flex-shrink: 0; max-width: 20.833333333333333333333333333333%; }     
+  #dante .d-col-lg-6 { flex-grow: 0; flex-shrink: 0; max-width: 25%; }     
+  #dante .d-col-lg-7 { flex-grow: 0; flex-shrink: 0; max-width: 29.166666666666666666666666666667%; }   
+  #dante .d-col-lg-8 { flex-grow: 0; flex-shrink: 0; max-width: 33.333333333333333333333333333333%; }       
+  #dante .d-col-lg-9 { flex-grow: 0; flex-shrink: 0; max-width: 37.5%; }   
+  #dante .d-col-lg-10 { flex-grow: 0; flex-shrink: 0; max-width: 41.666666666666666666666666666667%; }     
+  #dante .d-col-lg-11 { flex-grow: 0; flex-shrink: 0; max-width: 45.833333333333333333333333333333%; }    
+  #dante .d-col-lg-12 { flex-grow: 0; flex-shrink: 0; max-width: 50%; }   
+  #dante .d-col-lg-13 { flex-grow: 0; flex-shrink: 0; max-width: 54.166666666666666666666666666667%; }  
+  #dante .d-col-lg-14 { flex-grow: 0; flex-shrink: 0; max-width: 58.333333333333333333333333333333%; }  
+  #dante .d-col-lg-15 { flex-grow: 0; flex-shrink: 0; max-width: 62.5%; }     
+  #dante .d-col-lg-16 { flex-grow: 0; flex-shrink: 0; max-width: 66.666666666666666666666666666667%; }     
+  #dante .d-col-lg-17 { flex-grow: 0; flex-shrink: 0; max-width: 70.833333333333333333333333333333%; }     
+  #dante .d-col-lg-18 { flex-grow: 0; flex-shrink: 0; max-width: 75%; }     
+  #dante .d-col-lg-19 { flex-grow: 0; flex-shrink: 0; max-width: 79.166666666666666666666666666667%; }     
+  #dante .d-col-lg-20 { flex-grow: 0; flex-shrink: 0; max-width: 83.333333333333333333333333333333%; }     
+  #dante .d-col-lg-21 { flex-grow: 0; flex-shrink: 0; max-width: 87.5%; }       
+  #dante .d-col-lg-22 { flex-grow: 0; flex-shrink: 0; max-width: 91.666666666666666666666666666667%; }       
+  #dante .d-col-lg-23 { flex-grow: 0; flex-shrink: 0; max-width: 95.833333333333333333333333333333%; }     
+  #dante .d-col-lg-24 { flex-grow: 0; flex-shrink: 0; max-width: 100%; } 
+ }
+
+ @media (min-width: 1200px)
+ {
+  #dante .d-col-xl-1, #dante .d-col-xl-2, #dante .d-col-xl-3, #dante .d-col-xl-4, #dante .d-col-xl-5, #dante .d-col-xl-6, #dante .d-col-xl-7, #dante .d-col-xl-8, #dante .d-col-xl-9, #dante .d-col-xl-9, #dante .d-col-xl-10, #dante .d-col-xl-11, #dante .d-col-xl-12,
+  #dante .d-col-xl-13, #dante .d-col-xl-14, #dante .d-col-xl-15, #dante .d-col-xl-16, #dante .d-col-xl-17, #dante .d-col-xl-18, #dante .d-col-xl-19, #dante .d-col-xl-20, #dante .d-col-xl-21, #dante .d-col-xl-22, #dante .d-col-xl-23, #dante .d-col-xl-24
+  {
+   float: left; 
+   width: 100%;  
+  }
+
+  #dante .d-col-xl { flex-grow: 1; flex-basis: 100%; max-width: 100%; }
+  #dante .d-col-xl-1 { flex-grow: 0; flex-shrink: 0; max-width: 4.1666666666666666666666666666667%; }     
+  #dante .d-col-xl-2 { flex-grow: 0; flex-shrink: 0; max-width: 8.3333333333333333333333333333333%; }     
+  #dante .d-col-xl-3 { flex-grow: 0; flex-shrink: 0; max-width: 12.5%; }      
+  #dante .d-col-xl-4 { flex-grow: 0; flex-shrink: 0; max-width: 16.666666666666666666666666666667%; }   
+  #dante .d-col-xl-5 { flex-grow: 0; flex-shrink: 0; max-width: 20.833333333333333333333333333333%; }     
+  #dante .d-col-xl-6 { flex-grow: 0; flex-shrink: 0; max-width: 25%; }     
+  #dante .d-col-xl-7 { flex-grow: 0; flex-shrink: 0; max-width: 29.166666666666666666666666666667%; }   
+  #dante .d-col-xl-8 { flex-grow: 0; flex-shrink: 0; max-width: 33.333333333333333333333333333333%; }       
+  #dante .d-col-xl-9 { flex-grow: 0; flex-shrink: 0; max-width: 37.5%; }   
+  #dante .d-col-xl-10 { flex-grow: 0; flex-shrink: 0; max-width: 41.666666666666666666666666666667%; }     
+  #dante .d-col-xl-11 { flex-grow: 0; flex-shrink: 0; max-width: 45.833333333333333333333333333333%; }    
+  #dante .d-col-xl-12 { flex-grow: 0; flex-shrink: 0; max-width: 50%; }   
+  #dante .d-col-xl-13 { flex-grow: 0; flex-shrink: 0; max-width: 54.166666666666666666666666666667%; }  
+  #dante .d-col-xl-14 { flex-grow: 0; flex-shrink: 0; max-width: 58.333333333333333333333333333333%; }  
+  #dante .d-col-xl-15 { flex-grow: 0; flex-shrink: 0; max-width: 62.5%; }     
+  #dante .d-col-xl-16 { flex-grow: 0; flex-shrink: 0; max-width: 66.666666666666666666666666666667%; }     
+  #dante .d-col-xl-17 { flex-grow: 0; flex-shrink: 0; max-width: 70.833333333333333333333333333333%; }     
+  #dante .d-col-xl-18 { flex-grow: 0; flex-shrink: 0; max-width: 75%; }     
+  #dante .d-col-xl-19 { flex-grow: 0; flex-shrink: 0; max-width: 79.166666666666666666666666666667%; }     
+  #dante .d-col-xl-20 { flex-grow: 0; flex-shrink: 0; max-width: 83.333333333333333333333333333333%; }     
+  #dante .d-col-xl-21 { flex-grow: 0; flex-shrink: 0; max-width: 87.5%; }       
+  #dante .d-col-xl-22 { flex-grow: 0; flex-shrink: 0; max-width: 91.666666666666666666666666666667%; }       
+  #dante .d-col-xl-23 { flex-grow: 0; flex-shrink: 0; max-width: 95.833333333333333333333333333333%; }     
+  #dante .d-col-xl-24 { flex-grow: 0; flex-shrink: 0; max-width: 100%; }          
+ }
+/*  /\  /\  FLEX BOX  /\  /\  */
+
+/*  \/  \/  PADDING-MARGIN  \/  \/  */
+#dante .mhc { margin: 0 auto; }
+#dante .m50 { margin: 4.375px; }
+#dante .m80 { margin: 7px; }
+#dante .m100 { margin: 8.75px; }
+#dante .m200 { margin: 17.5px; }
+
+/* Vertical Only */
+
+#dante .mv50 { margin-top: 4.375px; margin-bottom: 4.375px; margin-left: 0; margin-right: 0; }
+#dante .mv100 { margin-top: 8.75px; margin-bottom: 8.75px; margin-left: 0; margin-right: 0; }
+#dante .mv200 { margin-top: 17.5px; margin-bottom: 17.5px; margin-left: 0; margin-right: 0; }
+
+/* Horizontal Only */
+
+#dante .mh50 { margin-left: 4.375px; margin-right: 4.375px; margin-top: 0; margin-bottom: 0; }
+#dante .mh100 { margin-left: 8.75px; margin-right: 8.75px; margin-top: 0; margin-bottom: 0; }
+#dante .mh200 { margin-left: 17.5px; margin-right: 17.5px; margin-top: 0; margin-bottom: 0; }
+
+/* Top Only */
+#dante .mtauto { margin-top: auto; }
+#dante .mt0 { margin-top: 0; }
+#dante .mt30 { margin-top: 4.2px; }
+#dante .mt50 { margin-top: 4.375px; }
+#dante .mt80 { margin-top: 7px; }
+#dante .mt100 { margin-top: 8.75px; }
+#dante .mt200 { margin-top: 17.5px; }
+
+/* Right Only */
+
+#dante .mrauto { margin-right: auto; }
+#dante .mr0 { margin-right: 0; }
+#dante .mr50 { margin-right: 4.375px; }
+#dante .mr80 { margin-right: 7px; }
+#dante .mr100 { margin-right: 8.75px; }
+#dante .mr200 { margin-right: 17.5px; }
+
+/* Bottom Only */
+#dante .mbauto { margin-bottom: auto; }
+#dante .mb0 { margin-bottom: 0; }
+#dante .mb50 { margin-bottom: 4.375px; }
+#dante .mb80 { margin-bottom: 7px; }
+#dante .mb100 { margin-bottom: 8.75px; }
+#dante .mb200 { margin-bottom: 17.5px; }
+
+/* Left Only */
+#dante .mlauto { margin-left: auto; }
+#dante .ml0 { margin-left: 0; }
+#dante .ml50 { margin-left: 4.375px; }
+#dante .ml80 { margin-left: 7px; }
+#dante .ml100 { margin-left: 8.75px; }
+#dante .ml200 { margin-left: 17.5px; }
+
+/* Margin Reset All */
+#dante .mra { margin: 0; }
+
+/* ---------- Padding Start ---------- */
+
+#dante .p50 { padding: 4.375px; }
+#dante .p80 { padding: 7px; }
+#dante .p100 { padding: 8.75px; }
+#dante .p200 { padding: 17.5px; }
+
+/* Vertical Only */
+
+#dante .pv50 { padding-top: 4.375px; padding-bottom: 4.375px; padding-left: 0; padding-right: 0; }
+#dante .pv80 { padding-top: 7px; padding-bottom: 7px; padding-left: 0; padding-right: 0; }
+#dante .pv100 { padding-top: 8.75px; padding-bottom: 8.75px; padding-left: 0; padding-right: 0; }
+#dante .pv200 { padding-top: 17.5px; padding-bottom: 17.5px; padding-left: 0; padding-right: 0; }
+
+/* Horizontal Only */
+
+#dante .ph50 { padding-left: 4.375px; padding-right: 4.375px; padding-top: 0; padding-bottom: 0; }
+#dante .ph80 { padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0; padding-bottom: 0; }
+#dante .ph100 { padding-left: 8.75px; padding-right: 8.75px; padding-top: 0; padding-bottom: 0; }
+#dante .ph200 { padding-left: 17.5px; padding-right: 17.5px; padding-top: 0; padding-bottom: 0; }
+
+/* Top Only */
+
+#dante .pt50 { padding-top: 4.375px; }
+#dante .pt80 { padding-top: 7px; }
+#dante .pt100 { padding-top: 8.75px; }
+#dante .pt200 { padding-top: 17.5px; }
+
+/* Right Only */
+
+#dante .pr50 { padding-right: 4.375px; }
+#dante .pr80 { padding-right: 7px; }
+#dante .pr100 { padding-right: 8.75px; }
+#dante .pr200 { padding-right: 17.5px; }
+
+/* Bottom Only */
+
+#dante .pb50 { padding-bottom: 4.375px; }
+#dante .pb80 { padding-bottom: 7px;; }
+#dante .pb100 { padding-bottom: 8.75px; }
+#dante .pb200 { padding-bottom: 17.5px; }
+
+/* Left Only */
+
+#dante .pl50 { padding-left: 4.375px; }
+#dante .pl80 { padding-left: 7px; }
+#dante .pl100 { padding-left: 8.75px; }
+#dante .pl200 { padding-left: 17.5px; }
+
+/* Padding Reset All */
+#dante .pra { padding: 0; }
+/*  /\  /\  PADDING-MARGIN  /\  /\  */
+
+/*  \/  \/  TABLE  \/  \/  */
+#dante table.details
+{
+ width: 100%;
+ border-spacing: 0px;
+}
+
+#dante table.details td 
+{
+ border-radius: 0px !important;
+ padding: 4px 8px !important;
+}
+
+#dante table.details thead th 
+{
+ background-color: white;
+ border-bottom: 1px solid #00a098;
+ padding: 4px 8px;
+}
+
+#dante .td-text-right 
+{
+ text-align: right;
+}
+
+#dante .td-text-left 
+{
+ text-align: left;
+}
+
+#dante .td-text-centre 
+{
+ text-align: center;
+}
+
+#dante .tr-height
+{
+ height: 40px;
+ min-height: 40px;
+}
+
+@media (min-width: 768px) 
+{
+ #dante table.details tbody tr:hover 
+ {
+  background-color: #CCCCCC !important;
+  color: #000000 !important;
+ }
+}
+
+@media (max-width: 768px) 
+{
+ #dante thead 
+ {
+  display: none;
+ }
+
+ #dante :not(.header-blank).table-data:before 
+ {
+  display: inline-block;
+  content: attr(data-header);
+  font-weight: bold;
+  text-align: left !important;     
+ }
+
+ #dante .table-data 
+ {
+  display: flex;
+  flex-direction: column;     
+ }
+
+ #dante .table-data:after 
+ {
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+ }
+
+ #dante .td-text-right,
+ #dante .td-text-centre 
+ {
+  text-align: left !important;
+ }
+}
+
+#dante table.details tbody tr:nth-of-type(2n+1) 
+{
+ background-color: rgba(0,0,0,0.04);
+}
+
+#dante table.details tbody tr:nth-of-type(2n+2) 
+{
+ background-color: rgba(0,0,0,0.01);
+}
+
+/*
+    Notes:
+    Enables individual table row hovering when the width of the browser reaches a minimum of 768px
+*/
+@media (min-width: 768px) 
+{
+ #dante table.details tbody tr:hover 
+ {
+  background-color: rgba(0,0,0, 0.35);
+  color: #fff;
+ }
+}
+
+#dante table.details tbody tr td a 
+{
+ color: #000;
+ text-decoration: none;
+ font-weight: 500;
+}
+
+/*
+    Notes:
+    - Removes the hover from a #dante table row. 
+      if you are NOT using the default #dante table row colour 
+      you must override the following css pseudo code
+*/
+#dante table.nohover tbody tr:hover:nth-of-type(2n+1) 
+{
+ background-color: rgba(0,0,0, 0.04) !important;
+ color: #000 !important;
+}
+
+#dante table.nohover tbody tr:hover:nth-of-type(2n+2) 
+{
+ background-color: rgba(0,0,0, 0.01) !important;
+ color: #000 !important;
+}
+
+#dante table.details th button,
+#dante table.details th a 
+{
+ outline: 0;
+ text-transform: none;
+ border: none;
+ cursor: pointer;
+ background-color: transparent;
+ color: rgb(0,0,0);
+ font-size: 1rem;
+}
+
+#dante table-data-popup 
+{
+ position: relative;
+ cursor: pointer;
+}
+
+/* --- MOBILE ---*/
+@media (max-width: 768px) 
+{
+ #dante .table-data:before
+ {
+  float: left;
+  font-weight: 500;
+  color: rgb(120,120,120);
+ }
+
+ #dante table.details tr > td.table-data
+ {
+  display: block;
+  text-align: right !important;
+ }
+
+ #dante table.details tr > td.table-data > span
+ {
+  display: inline-block !important;
+  text-align: right !important;
+  width: initial;
+ }
+
+ #dante table.details td 
+ {
+  padding: 6px 12px !important;
+ }
+
+ /* ODD ROWS */
+ #dante table.details tbody tr:nth-of-type(2n+1) 
+ {
+  background-color: rgba(0,0,0,0.1);
+ }
+ /* EVEN ROWS */
+ #dante table.details tbody tr:nth-of-type(2n+2) 
+ {
+  background-color: rgba(0,0,0,0.05);
+ }
+
+ #dante input[class*='login']
+ {
+  background-color: transparent !important;
+ } 
+ #dante #logindivider 
+ { 
+  display: none !important; 
+ }
+
+    #dante #signincontainer, #dante #registercontainer {
+        padding: 2rem !important;
+        background-color: white;
+    }
+
+ #dante #registercontainer
+ {
+  margin-top: 2rem;
+ }
+
+/* #dante #registercontainer a
+ {
+  width: 100%;
+ }*/
+}
+/*  /\  /\  TABLE  /\  /\  */
+
+/*  \/  \/  BUTTON  \/  \/  */
+#dante .button 
+{
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ outline: 0;
+ text-decoration: none;
+ cursor: pointer;
+ border: none;
+ transition: all .2s ease-in-out;
+ user-select:none;
+}
+
+#dante .button[disabled]{
+    cursor:wait;
+    opacity:0.3;
+}
+
+#dante .button:not([disabled]):hover, #dante .button-command:not([disabled]):hover
+{
+ opacity:0.85;
+}
+
+#dante .button-small 
+{
+ font-size: 9.1px;
+ height: 24.5px;
+ border-radius: 0.1875rem;
+ padding: 0 0.5rem;
+}
+
+#dante .button-standard 
+{
+ height: 31px;
+ border-radius: 0.1875rem;
+ padding: 0 1rem;
+}
+
+#dante .button-medium 
+{
+ height: 38px;
+ border-radius: 0.1875rem;
+ padding: 0 1rem;
+}
+
+#dante .button-large 
+{
+ height: 43px;
+ border-radius: 0.3125rem;
+ padding: 0 1rem;
+}
+
+#dante .button-command 
+{
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ outline: 0;
+ text-decoration: none;
+ cursor: pointer;
+ border: none;
+ height: 31px;
+ border-radius: 0.3125rem;
+ padding: 0 1rem;
+ background-color: #000;
+ color: #FFF;
+ text-transform: uppercase;
+ transition: all .2s ease-in-out;
+ user-select:none;
+}
+
+#dante .button-command:disabled
+{
+ background-color: rgb(87,88,89);
+ cursor:not-allowed;
+}
+
+#dante .button-default 
+{
+ background-color: rgb(109,110,113);
+ color: rgb(255,255,255);
+}
+
+#dante .button-dark
+{
+ background-color: #000;
+ color: rgb(255,255,255);
+}
+
+#dante .button-light 
+{
+ background-color: rgb(255,255,255);
+ color: rgb(0,0,0);
+}
+
+#dante .button-ok /* green */ 
+{
+ background-color: rgb(14,93,48);
+ color: rgb(255,255,255);
+}
+
+#dante .button-info /* blue */ 
+{
+ background-color: rgb(0,130,199);
+ color: rgb(255,255,255);
+}
+#dante .button-warning /* orange */ 
+{
+ background-color: rgb(218,122,40);
+ color: rgb(255,255,255);
+}
+
+#dante .button-hazard 
+{
+ background-color: rgb(206,78,78);
+ color: rgb(255,255,255);
+}
+
+/*  /\  /\  BUTTON  /\  /\  */
+
+/*  \/  \/  COLOURS  \/  \/  */
+#dante .background-default { background-color: rgba(120,120,120,0.1); }
+#dante .background-light-grey { background-color: rgb(220,220,220); } 
+#dante .background-grey { background-color: rgb(128,128,128); } 
+#dante .background-dark { background-color: rgb(0,0,0); }
+#dante .background-light { background-color: rgb(255,255,255); }
+#dante .background-ok { background-color: rgb(14,93,48); }
+#dante .background-info { background-color: rgb(0,130,199); }
+#dante .background-warning { background-color: rgb(218,122,40); }
+#dante .background-hazard { background-color: rgb(206,78,78); }
+#dante .background-transparent { background-color: transparent; }
+
+#dante .foreground-default { color: rgb(120,120,120) !important; }
+#dante .foreground-grey { color: rgb(128,128,128); }
+#dante .foreground-dark { color: rgb(0,0,0) !important; }
+#dante .foreground-light { color: rgb(255,255,255) !important; }
+#dante .foreground-ok { color: rgb(56,141,60) !important; } /* green */
+#dante .foreground-info { color: rgb(48,63,158) !important; } /* blue */
+#dante .foreground-warning { color: rgb(244,123,0) !important; } /* orange */
+#dante .foreground-hazard { color: rgb(189,40,40) !important; } /* red */
+
+#dante .border-default {
+    box-shadow: 0 0 5px 2px rgb(112,112,112, 0.125);
+    background-color: #fff;
+}
+/*  /\  /\  COLOURS  /\  /\  */
+
+/*  \/  \/  MISCELLANEOUS  \/  \/  */
+#dante span[class*="required"]:after, #dante label[class*="required"]:after {
+    content: ' *';
+    color: #ff0000;
+    font-weight: 500;
+}
+
+/*  /\  /\  MISCELLANEOUS  /\  /\  */
+
+/*  \/  \/  MODAL  \/  \/  */
+
+#dante div.dante-modal 
+{
+ z-index: 1005;
+ display: none;
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ overflow: auto;
+ background-color: rgb(0, 0, 0);
+ background-color: rgba(0, 0, 0, 0.4);
+}
+
+#dante div.dante-modal-container 
+{
+ position: relative;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background-color: white;
+ padding: 20px;
+}
+
+#dante .dante-modal-header
+{
+ font-weight: 500;
+ padding: 16px 16px 16px 24px;
+}
+
+#dante .dante-modal-title 
+{
+ display: inline-flex;
+ align-items: center;
+ font-size: 15.4px;
+ text-transform: uppercase;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+#dante div.dante-modal .dante-modal-header span.dante-modal-close
+{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 30px;
+ width: 30px;
+ min-width: 30px;  
+ background-color: transparent;
+ border-radius: 50%;
+ cursor: pointer;
+ font-weight: bold;
+ text-align: center;
+}
+
+#dante div.dante-modal .dante-modal-header > span.dante-modal-close i 
+{
+ margin-top: -3px;
+ font-style: normal;
+ font-size: 15.4px;
+}
+ 
+#dante div.dante-modal .dante-modal-header > span.dante-modal-close:hover
+{
+ background-color: rgba(0,0,0,0.1);
+ color: white;
+}
+
+#loadingmodal 
+{
+ z-index: 1010;
+}
+
+#dante div.dante-modal .helpicon 
+{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 30px;
+ width: 30px;
+ min-width: 30px;
+ border-radius: 50%;
+ background-color: transparent;
+ color: rgb(0,130,199);
+ cursor: pointer;
+ font-weight: bold;
+}
+
+#dante div.dante-modal .helpicon:hover
+{
+ background-color: rgb(0,130,199);
+ color: rgb(255,255,255);
+}
+/*  /\  /\  MODAL  /\  /\  */
+
+/*  \/  \/  UI  \/  \/  */
+
+/* -\/- RESETTING OTHER CSS ATTRIBUTES -\/- */
+#dante label
+{
+ min-height: unset;
+ padding-left: unset;
+ margin-bottom: unset;
+ display:inline-block;
+}
+
+#dante .checkbox
+{
+ position: unset;
+ display: unset;
+ margin-top: unset;
+ margin-bottom: unset;
+}
+ 
+#dante input
+{
+ position: unset !important;
+ max-width: unset !important;
+}
+
+#dante .label 
+{
+ padding: unset;
+ font-weight: unset;
+ line-height: unset;
+ color: unset;
+ text-align: unset;
+ white-space: unset; 
+ vertical-align: unset; 
+ border-radius: unset;
+}
+/* -/\- RESETTING OTHER CSS ATTRIBUTES -/\- */ 
+
+#dante .label 
+{
+ display: block;
+ width: 100%;
+ margin: 0 0 5px 0;
+}
+
+#dante .singleline 
+{
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+/* -\/- COMBOBOX -\/- */
+#dante .combobox 
+{
+ position: relative;
+ box-sizing: border-box;
+ width: 100%;
+ height: 31px;
+ background-color: rgb(255,255,255);
+ border: 1px solid #a9a9a9;
+ cursor: pointer;
+}
+
+#dante .combobox > span 
+{
+  display: flex;
+  align-items: center;
+  font-size: 13.3px;
+  color: rgb(0,0,0);
+  width: 100%; /* Force the width full as we can select it anywhere not just on the text. */
+  height: 100%; /* 31px; */
+  padding: 0 14px 0 14px;
+  line-height: 31px; /* 31px; */
+  text-overflow: ellipsis; /* to make it look nice put a ... on the end if the text is too large */
+  white-space: nowrap; /* No word wrapping we only want a single line */
+  overflow: hidden; /* Any overflow of the data must be hidden */
+ }
+
+#dante .combobox span[data-disabled="true"] 
+ {
+  background-color: #BDBDBD;
+  color: #fff;
+  width: 100%;
+  cursor:default;
+ }
+
+#dante .combobox input 
+{
+  display: none;
+  outline: 0;
+  width: 100%;
+  padding: 3.5px 14px;
+}
+
+#dante .combobox > span:after 
+{
+  font-family: FontAwesome;
+  content: '\f078';
+  position: absolute;
+  right: 14px;
+}
+
+#dante .combobox span > .icon 
+{
+ content: '&#xf107;';
+}
+
+#dante .combobox ul
+{
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  font-size: inherit;
+}
+
+#dante .simplesearch ul
+{
+ max-height: 90px;
+ list-style-type: none;  
+ margin: 0; 
+ padding: 0; 
+ overflow-y: auto; 
+ overflow-x: hidden;
+ background-color: rgb(224,224,224);
+ border: 1px solid #a9a9a9;
+}
+
+#dante ul.list-full-text-width
+{
+ width: auto !important; /* to make the ul the full width of it's content, this will override text-overflow/overflow in li */
+}
+
+#dante .combobox ul li,
+#dante .simplesearch ul li 
+{
+ font-size: 13.3px;
+ padding: 0 14px;
+ height: 31px;
+ line-height: 31px;
+ box-sizing: border-box;
+ display: block;
+ white-space: nowrap;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ font-size: inherit;
+ /*background-color: rgb(224,224,224);*/
+ color: rgb(0,0,0); 
+}
+
+/* ODD ROWS */
+#dante .combobox ul li:nth-of-type(2n+1),
+#dante .simplesearch ul li:nth-of-type(2n+1)
+{
+ background-color: rgba(0,0,0,0.1);
+}
+/* EVEN ROWS */
+#dante .combobox ul li:nth-of-type(2n+2),
+#dante .simplesearch ul li:nth-of-type(2n+2) 
+{
+ background-color: rgba(0,0,0,0.05);
+}
+
+#dante .combobox ul.active
+{
+ position: absolute;
+ left: 0;
+ top: inherit;
+ margin-top: 0;
+ z-index: 5;
+ display: block;
+ color: #fff;
+ overflow: hidden;
+ overflow-y: auto;
+ max-height: 250px;
+ width: 100%;
+ background-color: rgb(224,224,224); 
+ outline: 1px solid #a9a9a9;
+}
+
+#dante .combobox ul li:hover,
+#dante .simplesearch ul li:hover  
+
+{
+ background-color: rgb(128,128,128);
+ color: #fff;
+}
+
+#dante .combobox ul li.selected 
+{
+ background: rgba(91,202,74,1);
+ color: rgba(0,0,0,0.50);
+ font-weight: 700;
+}
+/* -/\- COMBOBOX -/\- */
+
+/* -\/- INPUT -\/- */
+#dante input[type=text],
+#dante input[type=text]:focus,
+#dante input[type=password],
+#dante input[type=password]:focus,
+#dante input[type=number],
+#dante input[type=number]:focus,
+#dante input[type=email],
+#dante input[type=email]:focus 
+{
+ height: 31px;
+ background-color: #fff;
+ border: 1px solid #a9a9a9;
+ outline: none;
+ box-shadow: none;
+ padding: 0 7px;
+ box-sizing: border-box;
+}
+
+#dante input[readonly=readonly],
+#dante input[readonly=readonly]:focus 
+{
+ background-color: #BDBDBD;
+ color: #fff;
+}
+
+#dante input[readonly=readonly],
+#dante input[readonly=readonly]:focus,
+#dante input[type="text"]:disabled,
+#dante textarea:disabled  
+{
+ background-color: #BDBDBD;
+ color: #fff;
+}
+
+/* -/\- INPUT -/\- */
+
+/* -\/- CHECKBOX -\/- */
+#dante .checkbox 
+{
+ display: inline-flex !important;
+ position: relative !important;
+ align-items: center !important;
+}
+
+#dante .checkbox input[type='checkbox']
+{
+ margin: 0 !important;
+ padding: 0 !important;
+ visibility: hidden !important;
+}
+
+#dante .checkbox label 
+{
+  width: 14px !important;
+  height: 14px !important;
+  cursor: pointer !important;
+  position: absolute !important;
+  background-color: rgb(33, 33, 33) !important;
+  border-radius: 0.1875rem !important;
+}
+
+#dante .checkbox input[type='checkbox']:checked + label
+{
+ background-color: #00a098 !important;
+}
+
+#dante .checkbox input[type='checkbox']:disabled + label
+{
+ background-color: grey !important;
+}
+
+#dante .checkbox label::after
+{
+ content: '' !important;
+ width: 8px !important;
+ height: 5px !important;
+ position: absolute !important;
+ top: 3px !important;
+ left: 3px !important;
+ border: 2px solid #fcfff4 !important; 
+ border-top: none !important;
+ border-right: none !important;
+ background: transparent !important;
+ opacity: 0 !important;
+ transform: rotate(-45deg) !important;
+}
+
+#dante .checkbox label:hover::after
+{
+ opacity: 0.3 !important;
+}
+
+#dante .checkbox input[type='checkbox']:checked + label:after
+{
+ opacity: 1 !important;
+}
+
+#dante .checkbox-inline
+{
+ display: inline !important;
+}
+/* -/\- CHECKBOX -/\- */
+
+/* -\/- TEXTAREA -\/- */
+#dante textarea 
+{
+ font-family: "roboto", "segoe ui", "Tahoma" !important;
+ font-size: 1.1em !important;
+ height: auto !important;
+ box-sizing: border-box !important;
+ padding: 4px !important;
+ background-color: white !important;
+ outline: none !important;
+ box-shadow: none !important;
+ width: 100% !important;
+ border: 0.0625rem solid #a9a9a9 !important;
+}
+
+textarea.not-resizable { resize: none; }
+/* -/\- TEXTAREA -/\- */
+
+/* -\/- DATE -\/- */
+#dante .picker-date
+{
+ position: relative !important;
+ display: inline-block !important;
+ padding: 0 !important;
+ width: 116px !important;
+}
+
+#dante .picker-date input 
+{
+ font-size: inherit !important;
+ width: 116px !important;
+ max-width: 116px !important;
+}
+
+#dante .picker-date span[class*="fa-calendar"] 
+{
+ position: absolute !important;
+ right: 7px !important;
+ bottom: 11px !important;
+ color: #00a098 !important;
+ cursor: pointer !important;
+}
+/* -/\- DATE -/\- */
+
+
+/* ---------- Note Start ---------- */
+
+#dante .note /* default setup */ {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-width: 0 0 0 .25rem;
+}
+
+#dante .note-ok /* green */ {
+    color: rgb(56, 141, 60);
+    background-color: rgba(56, 141, 60, 0.1);
+    border-color: rgba(56, 141, 60, 0.5);
+}
+
+#dante .note-background-ok {
+    background-color: rgba(56, 141, 60, 0.1);
+}
+
+#dante .note-foreground-ok {
+    color: rgb(56, 141, 60);
+}
+
+#dante .note-info /* blue */ {
+    color: rgb(48, 63, 158);
+    background-color: rgba(48, 63, 158, 0.1);
+    border-color: rgba(48, 63, 158, 0.5);
+}
+
+#dante .note-background-info {
+    background-color: rgba(48, 63, 158, 0.1);
+}
+
+#dante .note-foreground-info {
+    color: rgb(48, 63, 158);
+}
+
+#dante .note-warning /* orange */ {
+    color: rgb(244, 123, 0);
+    background-color: rgba(244, 123, 0, 0.1);
+    border-color: rgba(244, 123, 0, 0.5);
+}
+
+#dante .note-background-warning {
+    background-color: rgba(244, 123, 0, 0.1);
+}
+
+#dante .note-foreground-warning {
+    color: rgb(244, 123, 0);
+}
+
+#dante .note-hazard /* red */ {
+    color: rgb(189, 40, 40);
+    background-color: rgba(189, 40, 40, 0.1);
+    border-color: rgba(189, 40, 40, 0.5);
+}
+
+#dante .note-background-hazard {
+    background-color: rgba(189, 40, 40, 0.1);
+}
+
+#dante .note-foreground-hazard {
+    color: rgb(189, 40, 40);
+}
+
+#dante .note-default /* light grey */ {
+    color: rgb(120, 120, 120);
+    background-color: rgba(120, 120, 120, 0.1);
+    border-color: rgba(120, 120, 120, 0.5);
+}
+
+#dante .note-background-default {
+    background-color: rgba(120, 120, 120, 0.1);
+}
+
+#dante .note-foreground-default {
+    color: rgb(120, 120, 120);
+}
+
+/* ---------- Note End ---------- */
+
+/* ---------- Payment Begin ---------- */
+
+#dante .note-payment-select {
+    color: rgb(120, 120, 120);
+    background-color: rgba(120, 120, 120, 0.05);
+    border: 2px solid rgba(0, 0, 0, 0.03);
+    display: block;
+}
+
+#dante .note-payment-select a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 10px 10px;
+    display: block;
+    cursor: pointer;
+}
+
+#dante .note-payment-select.selected a{
+    cursor:default
+}
+
+#dante .note-payment-select:hover, #dante .note-payment-select.selected  {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+#dante .note-payment-select .payment-gateway{
+    display:none;
+}
+#dante .note-payment-select.selected .payment-gateway{
+    display:block;
+}
+#dante .note-payment-select .select-box{
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+    display:inline-block;
+    background-color: rgb(33, 33, 33);
+    border-radius: 1rem;
+}
+
+#dante .note-payment-select .select-box::after {
+    content: '' !important;
+    width: 8px !important;
+    height: 5px !important;
+    position: absolute !important;
+    top: 3px !important;
+    left: 3px !important;
+    border: 2px solid #fcfff4 !important;
+    border-top: none !important;
+    border-right: none !important;
+    opacity: 0;
+    transform: rotate(-45deg) !important;
+}
+#dante .note-payment-select.selected .select-box::after, #dante .note-payment-select:hover .select-box::after{
+    opacity:1 !important;
+}
+
+
+/* ---------- Payment End ---------- */
+
+
+/*  /\  /\  UI  /\  /\  */
+
+/*  \/  \/  FONT  \/  \/  */
+
+/* -\/- FONT ALIGNMENT -\/- */
+#dante .ta-left   { text-align: left }
+#dante .ta-right  { text-align: right; }
+#dante .ta-centre { text-align: center; }
+/* -/\- FONT ALIGNMENT -/\- */
+
+/* -\/- FONT SIZE -\/- */
+#dante .fs45  { font-size: 6.3px; } /*font-size: 0.45rem;*/
+#dante .fs50  { font-size: 7px; } /*font-size: 0.50rem;*/
+#dante .fs55  { font-size: 7.7px; } /*font-size: 0.55rem;*/
+#dante .fs60  { font-size: 8.4px; } /*font-size: 0.60rem;*/
+#dante .fs65  { font-size: 9.1px; } /*font-size: 0.65rem;*/
+#dante .fs75  { font-size: 10.5px; } /*font-size: 0.75rem;*/
+#dante .fs85  { font-size: 11.9px } /*font-size: 0.85rem;*/
+#dante .fs95  { font-size: 13.3px; } /*font-size: 0.95rem;*/
+#dante .fs100 { font-size: 14px; } /*font-size: 1rem;*/
+#dante .fs110 { font-size: 15.4px; }/*font-size: 1.1rem;*/
+#dante .fs120 { font-size: 16.8px; }/*font-size: 1.2rem;*/
+#dante .fs150 { font-size: 21px; }/*font-size: 1.5rem;*/
+#dante .fs180 { font-size: 25.2px; }/*font-size: 1.8rem;*/
+#dante .fs200 { font-size: 28px; }/*font-size: 2.0rem;*/
+/* -/\- FONT SIZE -/\- */
+
+/* -\/- LINE HEIGHT -\/- */
+#dante .lh100 { line-height: 14px;}
+#dante .lh110 { line-height: 15.4px; }
+#dante .lh120 { line-height: 16.8px; }
+#dante .lh150 { line-height: 21px; }
+#dante .lh180 { line-height: 25.2px; }
+#dante .lh200 { line-height: 28px; }
+/* -/\- LINE HEIGHT -/\- */
+
+/* -\/- FONT WEIGHT -\/- */
+#dante .fw400 { font-weight: 400; }
+#dante .fw500 { font-weight: 500; }
+#dante .fw600 { font-weight: 600; }
+#dante .fw700 { font-weight: 700; }
+/* -/\- FONT WEIGHT -/\- */
+
+/* -\/- FONT CASE -\/- */
+#dante .fuc { text-transform: uppercase; }
+#dante .flc { text-transform: lowercase; }
+/* -/\- FONT CASE -/\- */
+
+/* -\/- FONT AWESOME -\/- */
+#dante .fa-inner-text { font-family: "roboto", "segoe ui", sans-serif; }
+#dante .fa{ font-family:FontAwesome }
+/* -/\- FONT AWESOME -/\- */
+
+/*  /\  /\  FONT  /\  /\  */
+
+/*   \/ \/   LOGIN PAGE   \/ \/   */
+#dante #logincontainer {
+    padding: 32px 24px;
+}
+
+#dante #logincontainer label {
+    position: absolute !important;
+    left: 0 !important;
+    bottom: 3px !important;
+    color: rgb(118,118,118) !important;
+    font-weight: 900 !important;
+    font-size: 15.4px !important; /* font-size: 1.1rem */
+    cursor: text !important;
+    user-select: none !important;
+}
+
+#dante #logincontainer label.highlight
+{
+ color: rgb(48,63,158) !important;
+ top: 0px !important;
+ transition: 0.2s ease-in-out !important;
+ font-weight: 900 !important;
+ font-size: 14px !important; /* font-size: 1rem */
+}
+
+#dante #logincontainer input[class*=login] 
+{
+ margin-top: auto !important;
+ border: 0 !Important;
+}
+
+#dante #logincontainer .input_container
+{
+ position: relative !important;
+ border-bottom: solid 1px rgb(118,118,118) !important;
+}
+
+#dante #logincontainer .input_container.focused
+{
+ border-bottom: solid 1px rgb(0,110,245) !important;
+}
+/*   /\ /\   LOGIN PAGE   /\ /\   */
+
+/*   \/ \/   DATERANGEPICKER.CSS   \/ \/   */
+.daterangepicker {
+    position: absolute;
+    color: inherit;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 278px;
+    max-width: none;
+    padding: 0;
+    margin-top: 7px;
+    top: 100px;
+    left: 20px;
+    z-index: 3001;
+    display: none;
+    font-family: arial;
+    font-size: 15px;
+    line-height: 1em;
+}
+
+    .daterangepicker:before, .daterangepicker:after {
+        position: absolute;
+        display: inline-block;
+        border-bottom-color: rgba(0, 0, 0, 0.2);
+        content: '';
+    }
+
+    .daterangepicker:before {
+        top: -7px;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-bottom: 7px solid #ccc;
+    }
+
+    .daterangepicker:after {
+        top: -6px;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #fff;
+        border-left: 6px solid transparent;
+    }
+
+    .daterangepicker.opensleft:before {
+        right: 9px;
+    }
+
+    .daterangepicker.opensleft:after {
+        right: 10px;
+    }
+
+    .daterangepicker.openscenter:before {
+        left: 0;
+        right: 0;
+        width: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .daterangepicker.openscenter:after {
+        left: 0;
+        right: 0;
+        width: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .daterangepicker.opensright:before {
+        left: 9px;
+    }
+
+    .daterangepicker.opensright:after {
+        left: 10px;
+    }
+
+    .daterangepicker.drop-up {
+        margin-top: -7px;
+    }
+
+        .daterangepicker.drop-up:before {
+            top: initial;
+            bottom: -7px;
+            border-bottom: initial;
+            border-top: 7px solid #ccc;
+        }
+
+        .daterangepicker.drop-up:after {
+            top: initial;
+            bottom: -6px;
+            border-bottom: initial;
+            border-top: 6px solid #fff;
+        }
+
+    .daterangepicker.single .daterangepicker .ranges, .daterangepicker.single .drp-calendar {
+        float: none;
+    }
+
+    .daterangepicker.single .drp-selected {
+        display: none;
+    }
+
+    .daterangepicker.show-calendar .drp-calendar {
+        display: block;
+    }
+
+    .daterangepicker.show-calendar .drp-buttons {
+        display: block;
+    }
+
+    .daterangepicker.auto-apply .drp-buttons {
+        display: none;
+    }
+
+    .daterangepicker .drp-calendar {
+        display: none;
+        max-width: 270px;
+    }
+
+        .daterangepicker .drp-calendar.left {
+            padding: 8px 0 8px 8px;
+        }
+
+        .daterangepicker .drp-calendar.right {
+            padding: 8px;
+        }
+
+        .daterangepicker .drp-calendar.single .calendar-table {
+            border: none;
+        }
+
+    .daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span {
+        color: #fff;
+        border: solid black;
+        border-width: 0 2px 2px 0;
+        border-radius: 0;
+        display: inline-block;
+        padding: 3px;
+    }
+
+    .daterangepicker .calendar-table .next span {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    .daterangepicker .calendar-table .prev span {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+
+    .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+        white-space: nowrap;
+        text-align: center;
+        vertical-align: middle;
+        min-width: 32px;
+        width: 32px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 12px;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    .daterangepicker .calendar-table {
+        border: 1px solid #fff;
+        border-radius: 4px;
+        background-color: #fff;
+    }
+
+        .daterangepicker .calendar-table table {
+            width: 100%;
+            margin: 0;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+    .daterangepicker td.available:hover, .daterangepicker th.available:hover {
+        background-color: #eee;
+        border-color: transparent;
+        color: inherit;
+    }
+
+    .daterangepicker td.week, .daterangepicker th.week {
+        font-size: 80%;
+        color: #ccc;
+    }
+
+    .daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {
+        background-color: #fff;
+        border-color: transparent;
+        color: #999;
+    }
+
+    .daterangepicker td.in-range {
+        background-color: #ebf4f8;
+        border-color: transparent;
+        color: #000;
+        border-radius: 0;
+    }
+
+    .daterangepicker td.start-date {
+        border-radius: 4px 0 0 4px;
+    }
+
+    .daterangepicker td.end-date {
+        border-radius: 0 4px 4px 0;
+    }
+
+    .daterangepicker td.start-date.end-date {
+        border-radius: 4px;
+    }
+
+    .daterangepicker td.active, .daterangepicker td.active:hover {
+        background-color: #357ebd;
+        border-color: transparent;
+        color: #fff;
+    }
+
+    .daterangepicker th.month {
+        width: auto;
+    }
+
+    .daterangepicker td.disabled, .daterangepicker option.disabled {
+        color: #999;
+        cursor: not-allowed;
+        text-decoration: line-through;
+    }
+
+    .daterangepicker select.monthselect, .daterangepicker select.yearselect {
+        font-size: 12px;
+        padding: 1px;
+        height: auto;
+        margin: 0;
+        cursor: default;
+    }
+
+    .daterangepicker select.monthselect {
+        margin-right: 2%;
+        width: 56%;
+    }
+
+    .daterangepicker select.yearselect {
+        width: 40%;
+    }
+
+    .daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect {
+        width: 50px;
+        margin: 0 auto;
+        background: #eee;
+        border: 1px solid #eee;
+        padding: 2px;
+        outline: 0;
+        font-size: 12px;
+    }
+
+    .daterangepicker .calendar-time {
+        text-align: center;
+        margin: 4px auto 0 auto;
+        line-height: 30px;
+        position: relative;
+    }
+
+        .daterangepicker .calendar-time select.disabled {
+            color: #ccc;
+            cursor: not-allowed;
+        }
+
+    .daterangepicker .drp-buttons {
+        clear: both;
+        text-align: right;
+        padding: 8px;
+        border-top: 1px solid #ddd;
+        display: none;
+        line-height: 12px;
+        vertical-align: middle;
+    }
+
+    .daterangepicker .drp-selected {
+        display: inline-block;
+        font-size: 12px;
+        padding-right: 8px;
+    }
+
+    .daterangepicker .drp-buttons .btn {
+        margin-left: 8px;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 4px 8px;
+    }
+
+    .daterangepicker.show-ranges.single.rtl .drp-calendar.left {
+        border-right: 1px solid #ddd;
+    }
+
+    .daterangepicker.show-ranges.single.ltr .drp-calendar.left {
+        border-left: 1px solid #ddd;
+    }
+
+    .daterangepicker.show-ranges.rtl .drp-calendar.right {
+        border-right: 1px solid #ddd;
+    }
+
+    .daterangepicker.show-ranges.ltr .drp-calendar.left {
+        border-left: 1px solid #ddd;
+    }
+
+    .daterangepicker .ranges {
+        float: none;
+        text-align: left;
+        margin: 0;
+    }
+
+    .daterangepicker.show-calendar .ranges {
+        margin-top: 8px;
+    }
+
+    .daterangepicker .ranges ul {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    .daterangepicker .ranges li {
+        font-size: 12px;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+        .daterangepicker .ranges li:hover {
+            background-color: #eee;
+        }
+
+        .daterangepicker .ranges li.active {
+            background-color: #08c;
+            color: #fff;
+        }
+
+/*  Larger Screen Styling */
+@media (min-width: 564px) {
+    .daterangepicker {
+        width: auto;
+    }
+
+        .daterangepicker .ranges ul {
+            width: 140px;
+        }
+
+        .daterangepicker.single .ranges ul {
+            width: 100%;
+        }
+
+        .daterangepicker.single .drp-calendar.left {
+            clear: none;
+        }
+
+        .daterangepicker.single .ranges, .daterangepicker.single .drp-calendar {
+            float: left;
+        }
+
+    .daterangepicker {
+        direction: ltr;
+        text-align: left;
+    }
+
+        .daterangepicker .drp-calendar.left {
+            clear: left;
+            margin-right: 0;
+        }
+
+            .daterangepicker .drp-calendar.left .calendar-table {
+                border-right: none;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+        .daterangepicker .drp-calendar.right {
+            margin-left: 0;
+        }
+
+            .daterangepicker .drp-calendar.right .calendar-table {
+                border-left: none;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+        .daterangepicker .drp-calendar.left .calendar-table {
+            padding-right: 8px;
+        }
+
+        .daterangepicker .ranges, .daterangepicker .drp-calendar {
+            float: left;
+        }
+}
+
+@media (min-width: 730px) {
+    .daterangepicker .ranges {
+        width: auto;
+    }
+
+    .daterangepicker .ranges {
+        float: left;
+    }
+
+    .daterangepicker.rtl .ranges {
+        float: right;
+    }
+
+    .daterangepicker .drp-calendar.left {
+        clear: none !important;
+    }
+}
+
+
+/*   /\ /\   DATERANGEPICKER.CSS   /\ /\   */
+
+
+#dante div.home-icon {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    min-width: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(128,128,128);
+}
+
+    #dante div.home-icon i {
+        font-size: 25px;
+    }
+
+    #dante div.home-icon:hover {
+        background-color: rgba(0,0,0,0.1);
+        color: white;
+    }
+
+#dante .tile-container {
+    background-color: #fff;
+    position: relative;
+}
+
+    #dante .tile-container a {
+        text-decoration: none;
+        color: #000;
+    }
+
+#dante .tile-block {
+    border-radius: 5px !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    height: calc(100% - 1.25rem) !important;
+    position: relative !important;
+    overflow: hidden;
+}
+
+    #dante .tile-block:hover {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+
+#dante .tile-divider {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#dante .tile-header {
+    height: 60px
+}
+
+#dante .tile-title {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 16.8px;
+    font-weight: 500;
+}
+
+#dante .tile-description-block {
+    display: block;
+    padding: 18px 24px;
+}
+
+#dante .tile-description {
+    font-size: 15.4px;
+}
+
+
+#dante .delegate-file-upload input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+    margin-right: 16px;
+    transition: background-color 200ms;
+}
+
+#dante .delegate-file-upload input[type="file"]::file-selector-button:hover {
+    background-color: #f3f4f6;
+}
+
+#dante .delegate-file-upload input[type="file"]::file-selector-button:active {
+    background-color: #e5e7eb;
+}
